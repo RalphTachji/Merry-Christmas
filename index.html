@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Merry Christmas, Kirin 🎄</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loading Animation -->
+  <div class="loader" id="loader">
+    <div class="gift-box">
+      <div class="bow">🎀</div>
+      <div class="ribbon-v"></div>
+      <div class="ribbon-h"></div>
+      <div class="box-lid"></div>
+      <div class="box-bottom"></div>
+      <div class="sparkles-burst"></div>
+      <div class="loading-text">Unwrapping...</div>
+    </div>
+  </div>
+
+  <!-- Aurora Borealis -->
+  <div class="aurora">
+    <div class="aurora-layer aurora-layer-1"></div>
+    <div class="aurora-layer aurora-layer-2"></div>
+    <div class="aurora-layer aurora-layer-3"></div>
+  </div>
+
+  <!-- Nebula Clouds -->
+  <div class="nebula">
+    <div class="nebula-cloud nebula-cloud-1"></div>
+    <div class="nebula-cloud nebula-cloud-2"></div>
+    <div class="nebula-cloud nebula-cloud-3"></div>
+    <div class="nebula-cloud nebula-cloud-4"></div>
+    <div class="nebula-cloud nebula-cloud-5"></div>
+  </div>
+
+  <!-- Moon -->
+  <div class="moon" id="moon">
+    <div class="moon-crater"></div>
+  </div>
+
+  <!-- Stars -->
+  <div class="stars" id="stars"></div>
+
+  <div class="bg"></div>
+  <div class="snow" id="snow"></div>
+  <div class="lights">
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+    <div class="light"></div>
+  </div>
+
+  <main class="wrap">
+    <div class="card-container" id="cardContainer">
+      <div class="card-flipper">
+        <!-- Front of card -->
+        <section class="card card-front">
+          <button class="flip-button" id="flipBtn" type="button" title="Flip card">🔄</button>
+          
+          <button class="gift" id="giftBtn" type="button">🎁 Tap to open</button>
+
+          <h1 class="title" data-text="Merry Christmas, Kirin">Merry Christmas, Kirin</h1>
+          <p class="subtitle">I had to one up ya on your "niceness" present and made this. Because of course I did lol</p>
+
+          <div class="reveal" id="reveal">
+            <h2 class="revealTitle">Consider this your bonus for the year</h2>
+
+            <p class="revealText">
+              Thanks for the all of the laughs and sarcasm(rudeness) jk you're actually hilarious. Hope you had a nice Christmas!
+            </p>
+
+            
+
+            <p class="from">— Ralph</p>
+          </div>
+        </section>
+
+        <!-- Back of card -->
+        <section class="card card-back">
+          <button class="flip-button" id="flipBtnBack" type="button" title="Flip back">🔄</button>
+          
+          <h2 class="card-back-title">Completely unsuspicious Christmas tree... 🎄</h2>
+          <p class="card-back-text">A special tree click around for surprises...</p>
+          
+          <!-- Christmas Tree on the back -->
+          <div class="christmas-tree-container">
+            <div class="tree" id="christmasTree">
+              <div class="tree-star">⭐</div>
+              <div class="tree-section"></div>
+              <div class="tree-trunk"></div>
+              <div class="tree-pot"></div>
+            </div>
+            <!-- Gift boxes under the tree -->
+            <div class="gift-boxes" id="giftBoxes">
+              <div class="gift-box-item">
+                <div class="gift-box-wrapper small">
+                  <div class="gift-base" style="background: linear-gradient(135deg, #ff6b9d, #ff2a6d);"></div>
+                  <div class="gift-ribbon-v"></div>
+                  <div class="gift-ribbon-h"></div>
+                  <div class="gift-bow">🎀</div>
+                </div>
+              </div>
+              <div class="gift-box-item">
+                <div class="gift-box-wrapper large">
+                  <div class="gift-base" style="background: linear-gradient(135deg, #43ffd7, #00ff88);"></div>
+                  <div class="gift-ribbon-v"></div>
+                  <div class="gift-ribbon-h"></div>
+                  <div class="gift-bow">🎀</div>
+                </div>
+              </div>
+              <div class="gift-box-item">
+                <div class="gift-box-wrapper">
+                  <div class="gift-base" style="background: linear-gradient(135deg, #ffd700, #ffed4e);"></div>
+                  <div class="gift-ribbon-v"></div>
+                  <div class="gift-ribbon-h"></div>
+                  <div class="gift-bow">🎀</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Super Size Button -->
+  <button class="super-size-btn" id="superSizeBtn" type="button">hmmm what does this do?? 🎄</button>
+
+  <!-- Grinch Mode Button -->
+  <button class="grinch-btn" id="grinchBtn" type="button">This looks completely harmless....</button>
+
+  <!-- Simple Snowman (clickable to melt) -->
+  <div class="simple-snowman" id="simpleSnowman">⛄</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
